@@ -1,0 +1,6 @@
+steps: 
+  - shell: pwsh
+    env:
+      SUPER_SECRET: ${{ secrets.SuperSecret }}
+    run:  |
+      example-command "$env:SUPER_SECRET" 
