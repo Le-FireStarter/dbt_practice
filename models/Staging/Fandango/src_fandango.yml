@@ -2,11 +2,11 @@ version: 2
 
 sources:
   - name: fandango
-    database: 
+    database: |
       {%- if target.name == 'dev' -%} raw_dev
       {%- elif target.name == 'prod' -%} raw
       {%- else -%} invalid_database
-      {%- end if -%}
+      {%- endif -%}
 
     schema: fandango
     tables:
