@@ -1,0 +1,5 @@
+packages:
+  - package: dbt-labs/dbt_utils
+    version: 0.8.1
+
+#It is important to indicate the version to avoid pulling unneeded updates.
